@@ -41,11 +41,11 @@ class student:
     def __del__(self):
         print("Thank you for viewing the profile of " +self.name +'.')
 
-    def average(self):
-        length=len(self.grades)
+    def average(self,grades):
+        length=len(grades)
         num2=0
         for i in range(0,length):
-            num1=self.grades[i]
+            num1=grades[i]
             num2=num2+num1
         return num2
     def getHonorRoll(self):
@@ -73,7 +73,7 @@ class student:
         
         self.courses=lis1
         
-    def getGrades(self,grade1,grade2,grade3,grade4,grade5,grade6,grade7):
+    def getGrades(self,grade1=0,grade2=0,grade3=0,grade4=0,grade5=0,grade6=0,grade7=0,grade8=0):
         lis1=[]
         lis1.insert(grade1,0)
         lis1.insert(grade2,1)
