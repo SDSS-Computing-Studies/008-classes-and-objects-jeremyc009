@@ -60,7 +60,10 @@ class student:
         else: 
             lis.sort()
             average=(lis[-1]+lis[-2]+lis[-3]+lis[-4]+lis[-5])/5
-            return average
+            if average>86:
+                return True
+            else:
+                return False
     def showCourses(self):
         lis=self.courses
         ans=print(lis)
