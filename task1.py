@@ -73,7 +73,7 @@ class student:
         course=class1[ind]
         grades=self.grades
         grades2=grades[ind]
-        ans=print(self.name+' has a '+ str(grades2) + '%'+' in the course' + str(course)+'.')
+        ans=print(self.name+' has a '+ str(grades2) + '%'+' in the course ' + str(course)+'.')
         return ans
     def getCourses(self,lis1):
         
@@ -109,7 +109,7 @@ def main():
     st2 = student("Joe Lunchbox","12346", 11)
     st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st1.getGrades( 71, 98, 93, 95, 68, 81, 71)
-
+    
 
 
 
