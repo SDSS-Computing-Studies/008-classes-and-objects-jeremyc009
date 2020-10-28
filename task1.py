@@ -43,7 +43,7 @@ class student:
 
     def average(self):
         lis=self.grades
-        print(lis)
+        
         length=len(lis)
         num2=0
         for i in range(0,length):
